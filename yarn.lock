@@ -338,6 +338,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"azure_policy_dev@workspace:infra/resources/dev":
+  version: 0.0.0-use.local
+  resolution: "azure_policy_dev@workspace:infra/resources/dev"
+  languageName: unknown
+  linkType: soft
+
 "better-path-resolve@npm:1.0.0":
   version: 1.0.0
   resolution: "better-path-resolve@npm:1.0.0"

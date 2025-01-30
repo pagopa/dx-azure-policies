@@ -1,0 +1,7 @@
+{
+  "name": "azure_policy_dev",
+  "version": "0.0.0",
+  "private": true,
+  "provider": "azurerm",
+  "description": "Deploys Azure Policies is DEV environment"
+}

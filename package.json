@@ -1,6 +1,6 @@
 {
   "name": "dx-azure-policies",
-  "version": "0.0.0",
+  "private": true,
   "workspaces": [
     "infra/resources/*"
   ],
