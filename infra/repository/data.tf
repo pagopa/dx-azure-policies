@@ -1,10 +1,10 @@
 data "azurerm_user_assigned_identity" "identity_dev_ci" {
-  name                = "${local.prefix}-${local.env_dev}-playground-github-ci-identity"
+  name                = "${local.prefix}-${local.env_dev}-policy-github-ci-identity"
   resource_group_name = local.identity_resource_group_name_dev
 }
 
 data "azurerm_user_assigned_identity" "identity_dev_cd" {
-  name                = "${local.prefix}-${local.env_dev}-playground-github-cd-identity"
+  name                = "${local.prefix}-${local.env_dev}-policy-github-cd-identity"
   resource_group_name = local.identity_resource_group_name_dev
 }
 
