@@ -1,0 +1,21 @@
+{
+  "name": "dx-azure-policies",
+  "version": "0.0.0",
+  "workspaces": [
+    "infra/resources/*"
+  ],
+  "devDependencies": {
+    "prettier": "3.2.5",
+    "turbo": "^2.0.12"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "code-review": "turbo run typecheck format:check lint:check",
+    "version": "yarn changeset version && yarn --mode update-lockfile",
+    "release": "yarn build && changeset publish"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.11"
+  },
+  "packageManager": "yarn@4.4.0"
+}
