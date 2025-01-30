@@ -8,16 +8,6 @@ data "azurerm_user_assigned_identity" "identity_dev_cd" {
   resource_group_name = local.identity_resource_group_name_dev
 }
 
-# data "azurerm_user_assigned_identity" "identity_prod_ci" {
-#   name                = "${local.prefix}-${local.env_prod}-playground-github-ci-identity"
-#   resource_group_name = local.identity_resource_group_name_prod
-# }
-
-# data "azurerm_user_assigned_identity" "identity_prod_cd" {
-#   name                = "${local.prefix}-${local.env_prod}-playground-github-cd-identity"
-#   resource_group_name = local.identity_resource_group_name_prod
-# }
-
 data "github_organization_teams" "all" {
   root_teams_only = true
   summary_only    = true
