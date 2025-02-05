@@ -9,7 +9,8 @@
         "field": "tags.CreatedBy",
         "notIn": [
           "Terraform",
-          "ARM"
+          "ARM",
+          "AzurePortal"
         ]
       },
       {
@@ -31,8 +32,16 @@
         ]
       },
       {
-        "field": "tags.Source",
-        "match": "https://github.com/pagopa/*"
+        "allOf": [
+          {
+            "field": "tags.CreatedBy",
+            "equals": "Terraform"
+          },
+          {
+            "field": "tags.Source",
+            "notLike": "https://github.com/pagopa/*"
+          }
+        ]
       },
       {
         "field": "tags.ManagementTeam",
